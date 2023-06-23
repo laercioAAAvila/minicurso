@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/base/head :: head}"></head>
+<body>
+
+	<div class="card m-2 p-2">
+		<div classe="card-head">
+			<h2>Adicionar Nova Pessoa</h2>
+		</div>
+		<div class="card-body">
+			<form th:replace="~{fragments/pessoa/form :: form}"></form>
+		</div>
+	</div>
+	<hr>
+	<div class="card m-2 p-2">
+		<div classe="card-head">
+			<h1>Lista de Pessoas</h1>
+		</div>
+		<div class="card-body">
+			<table th:replace="~{fragments/pessoa/tabela :: tabela}"></table>
+		</div>
+	</div>
+</body>
+<footer th:replace="~{fragments/base/footer :: footer}"></footer>
+</html>
